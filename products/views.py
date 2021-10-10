@@ -4,8 +4,14 @@ from django.shortcuts import render
 
 
 def index(request):
-    return render(request, 'products/index.html')
+    my_dict = {
+        'title': 'GeekShop'
+    }
+    return render(request, 'products/index.html', my_dict)
 
 
 def products(request):
-    return render(request, 'products/products.html')
+    my_dict = {
+        'title': 'GeekShop - Каталог'
+    }
+    return render(request, 'products/products.html', my_dict)
