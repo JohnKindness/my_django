@@ -65,9 +65,11 @@
                         </a>
                         <div class="card-body">
                             <h4 class="card-title">
-                                <a href="#">Худи черного цвета с монограммами adidas Originals</a>
+                                <a href="#">{% for product in products %} {{ product.name_1 }} {% endfor %}
+                                </a>
+
                             </h4>
-                            <h5>6 090,00 руб.</h5>
+                            <h5>{% for product in products %} {{ product.price_1 }} {% endfor %} руб.</h5>
                             <p class="card-text">Мягкая ткань для свитшотов. Стиль и комфорт – это образ жизни.</p>
                         </div>
                         <div class="card-footer text-center">
@@ -84,9 +86,9 @@
                         </a>
                         <div class="card-body">
                             <h4 class="card-title">
-                                <a href="#">Синяя куртка The North Face</a>
+                                <a href="#">{% for product in products %} {{ product.name_2 }} {% endfor %}</a>
                             </h4>
-                            <h5>23 725,00 руб.</h5>
+                            <h5>{% for product in products %} {{ product.price_2 }} {% endfor %} руб.</h5>
                             <p class="card-text">
                                 Гладкая ткань. Водонепроницаемое покрытие. Легкий и теплый пуховый наполнитель.
                             </p>
@@ -106,9 +108,9 @@
                         </a>
                         <div class="card-body">
                             <h4 class="card-title">
-                                <a href="#">Коричневый спортивный oversized-топ ASOS DESIGN</a>
+                                <a href="#">{% for product in products %} {{ product.name_3 }} {% endfor %}</a>
                             </h4>
-                            <h5>3 390,00 руб.</h5>
+                            <h5>{% for product in products %} {{ product.price_3 }} {% endfor %} руб.</h5>
                             <p class="card-text">Материал с плюшевой текстурой. Удобный и мягкий.</p>
                         </div>
                         <div class="card-footer text-center">
@@ -126,9 +128,9 @@
                         </a>
                         <div class="card-body">
                             <h4 class="card-title">
-                                <a href="#">Черный рюкзак Nike Heritage</a>
+                                <a href="#">{% for product in products %} {{ product.name_4 }} {% endfor %}</a>
                             </h4>
-                            <h5>2 340,00 руб.</h5>
+                            <h5>{% for product in products %} {{ product.price_4 }} {% endfor %} руб.</h5>
                             <p class="card-text">Плотная ткань. Легкий материал.</p>
                         </div>
                         <div class="card-footer text-center">
@@ -146,9 +148,9 @@
                         </a>
                         <div class="card-body">
                             <h4 class="card-title">
-                                <a href="#">Черные туфли на платформе с 3 парами люверсов Dr Martens 1461 Bex</a>
+                                <a href="#">{% for product in products %} {{ product.name_5 }} {% endfor %}</a>
                             </h4>
-                            <h5>13 590,00 руб.</h5>
+                            <h5>{% for product in products %} {{ product.price_5 }} {% endfor %} руб.</h5>
                             <p class="card-text">Гладкий кожаный верх. Натуральный материал.</p>
                         </div>
                         <div class="card-footer text-center">
@@ -166,9 +168,9 @@
                         </a>
                         <div class="card-body">
                             <h4 class="card-title">
-                                <a href="#">Темно-синие широкие строгие брюки ASOS DESIGN</a>
+                                <a href="#">{% for product in products %} {{ product.name_6 }} {% endfor %}</a>
                             </h4>
-                            <h5>2 890,00 руб.</h5>
+                            <h5>{% for product in products %} {{ product.price_6 }} {% endfor %} руб.</h5>
                             <p class="card-text">Легкая эластичная ткань сирсакер Фактурная ткань.</p>
                         </div>
                         <div class="card-footer text-center">
